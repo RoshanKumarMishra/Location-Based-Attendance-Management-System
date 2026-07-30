@@ -1,0 +1,3627 @@
+what we have done is made a hybride model for a location based attendance system
+an app for employees and 
+and website for the admins
+
+this is what i thaught earlier
+like there will be a location based attendance system
+in this system what i want is a app for the employees where the employees can give the attendance
+the app will autimatically fetch the location and if the emoloyee will be in the desired location then only he can give the attendance
+the employee will have employee id pass which will be required to log in into the site
+everhy emoloyee will be assigned their work location
+foe example in a complany there are 10 employee a0 a1 a2 a3 a4 a5 a6 a7 a8 a9
+and 4 sites W X Y Z 
+now for site W , a0 a4 a7 a9 are assigned
+for site X , a1 a5 a7 a9 are assigned
+for site Y , a1 a2 a3 a4 are assigned
+the employees can give attendance when they are in their assigned site other wise tthe he will get a error message
+i want the site  for the employees with employees feature
+like give attendance
+view profile
+change pass
+view their attendance log and other features
+
+these are all for the employees
+
+now there needs to be an admin for the control of this system 
+for that i want a website like thing for the admins
+in which he will have all the admin controls 
+like add delete modifiy the dtatils of the employee and the site
+like for adding employees , 
+there are many employesds in a company, so for that i need a feature like uploading an excel file with all the required details of the employee and his assigned site
+this is for adding employee in bulk , sometimes need to add only 1 or 2 employess so for that a manual addnig feature also
+also for site in need these same feature for adding the site , a excel file in which there is the name address and latlog of the sites ,a nd a single site adding feature
+after addimg the employee the emp id and the generated passowrd is shared to the employee to their email
+also the admin can modify the site detail like name etc 
+also edit emloyee detail like the assigned sites and other
+also the admin can see active employee in each site 
+view all site view all employee
+also i nedd a feature like a map opening where all the location are mapped
+also the amin needs a id passowrd to log in to the site which it directly setup in the database
+
+now i have updateddd this
+just see what is my requirement
+like there will be a location based attendance system
+in this system what i want is a app for the employees where the employees can give the attendance
+the app will autimatically fetch the location and if the emoloyee will be in the desired location then only he can give the attendance
+the employee will have employee id pass which will be required to log in into the site
+every emoloyee will be assigned their work location
+there are three things pls understand 
+team , supervisor and employee
+there are many teams maned team001,team002,team003 and there are certain employees assigned to each team 
+there is a supervisor to each team with sup001, sup002, sup003
+for  example in a complany there are 10 teams a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 , in each 
+and 4 sites W X Y Z 
+now for site W , a0 a4 a7 a9 are assigned
+for site X , a1 a5 a7 a9 are assigned
+for site Y , a1 a2 a3 a4 are assigned
+and in each team there is assigned a superviser 
+like for a0 is sup001 and etc
+the superviser will not have attendandce
+the employees can give attendance when they are in their assigned site other wise tthe he will get a error message
+i want the employee site with the employees with employees feature
+like give attendance
+view profile
+change pass
+view their attendance log and other features
+the supervisor will be able to log in to the website which is also created for admins and for him and there is a different dashboard where he can see details about his team
+
+these are all for the employees and superviser
+
+now there needs to be an admin for the control of this system 
+for that i want a website like thing for the admins
+in which he will have all the admin controls 
+like add delete modifiy the dtatils of the employee and the site
+like for adding employees , 
+there are many employesds in a company, so for that i need a feature like uploading an excel file with all the required details of the employee and his assigned site
+this is for adding employee in bulk , sometimes need to add only 1 or 2 employess so for that a manual addnig feature also
+also for site in need these same feature for adding the site , a excel file in which there is the name address and latlog of the sites ,a nd a single site adding feature
+after addimg the employee the emp id and the generated passowrd is shared to the employee to their email
+also the admin can modify the site detail like name etc 
+also edit emloyee detail like the assigned sites and other
+also the admin can see active employee in each site 
+view all site view all employee
+also i nedd a feature like a map opening where all the location are mapped
+also the amin needs a id passowrd to log in to the site which it directly setup in the database
+
+
+in this what we have donw till now is 
+made a damin log in
+made a admin dashboard with 3 buttons employees,sites, and attendance 
+in this we only made the employee control page with adding employee editing deleting and upload excelt hing and so on
+and made the site control page with the site control features
+
+i wii give you all the codes of the files that i have made till now
+ 
+also this is my databast which i creatted in firebase
+admin
+admin1@xyz.com
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+admin
+
+admin1@xyz.com
+
+admin2@xyz.com
+
+admin3@xyz.com
+
+admin4@xyz.com
+
+admin5@xyz.com
+admin1@xyz.com
+name
+"admin1"
+(string)
+
+
+Sites
+B8trXt9ogFYKEwTlpgE5
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+Sites
+
+B8trXt9ogFYKEwTlpgE5
+
+HLCyaJZWkI0J144N0R4b
+
+OJ78Obd6DFLBOGLJPtZY
+
+OUwWcPCHXH8k4QoXlKDz
+
+RTn2hbOiZbuMYBXFOF0M
+
+WFowS720NCKfhzj2ol90
+
+WKY7JXSvfosircrdREvr
+
+aPpDhq3qgSkiQvfhGIvK
+
+eVdSWUclCd2xIEhj00l2
+
+hr2shKFS8riRxz20uOgc
+
+i2IyIyjbDU2k1aSTeyQo
+
+xJYquX3abvcUPd2OjkGX
+B8trXt9ogFYKEwTlpgE5
+address
+"Kathmandu District"
+(string)
+
+
+lat
+27.7172
+(number)
+
+
+lng
+85.324
+(number)
+
+
+name
+"Kathmandu"
+(string)
+
+
+siteId
+"site003"
+(string)
+
+
+attendance
+Zq7ulHMqnwYmVG7TlsBD
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+attendance
+
+Zq7ulHMqnwYmVG7TlsBD
+
+qL4Ze6uZiixKElx3qjoI
+Zq7ulHMqnwYmVG7TlsBD
+empId
+"emp004"
+(string)
+
+
+siteId
+"site002"
+(string)
+
+
+timestamp
+June 17, 2025 at 6:03:06 PM UTC+5:45
+(timestamp)
+
+
+type
+"check in "
+(string)
+
+
+employee
+2oEzzcMaLKco2h5GkPnZ
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+employee
+
+2oEzzcMaLKco2h5GkPnZ
+
+90snkTCYfo27XPfpc8Pa
+
+HWJqvuh99OzhmkGXatvd
+
+UvdNNNO9AfttVPfSUUOV
+
+WNkwsDIabRJNJIPaWeBc
+
+eSbmB8T5zZLOILbSdFo4
+
+nbIusddespXw1DtqRUik
+
+vjTBB6Y3moTg4kwPgcgC
+
+wWobe61HX56IH3AdRfwb
+2oEzzcMaLKco2h5GkPnZ
+active
+true
+(boolean)
+
+
+
+assigned
+(array)
+
+
+0
+"SiteC"
+(string)
+
+
+email
+"jane.smith@example.com"
+(string)
+
+
+empId
+"emp005"
+(string)
+
+
+name
+"Jane Smith"
+(string)
+
+
+these are the collectiona dn there are other fiends in each collection
+
+
+now tell me what to do how to update the database and all
+but first please understand what is there in hy code rn
+
+
+
+
+
+
+
+
+
+
+
+
+What can I help you with today?
+
+
+
+
+i will give you the codes of different files i m making an location based attendance system this is the folder str i want the same login page for all supervisor admin and employee the files i have created is // src/pages/AdminLogin.js import React, { useState } from 'react'; import { signInWithE
+
+pasted
+
+
+
+Claude
+Pasted content
+79.00 KB •3,312 lines
+•
+Formatting may be inconsistent from source
+
+i will give you the codes of different files
+i m making an location based attendance system
+
+this is the folder str
+i want the same login page for all 
+supervisor admin and employee
+
+the files i have created is
+
+// src/pages/AdminLogin.js
+import React, { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { collection, doc, getDoc, query, where, getDocs } from 'firebase/firestore';
+import { auth, db } from '../firebaseConfig';
+
+const AdminLogin = ({ onLogin }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = async () => {
+    if (!email || !password) {
+      alert('Please enter both email and password');
+      return;
+    }
+
+    setLoading(true);
+    
+    try {
+      console.log('🔐 Attempting login for:', email);
+      
+      // First authenticate with Firebase Auth
+      const userCred = await signInWithEmailAndPassword(auth, email, password);
+      console.log('✅ Firebase Auth successful');
+
+      // 🔍 Check if user is admin (document ID is email)
+      console.log('🔍 Checking admin collection...');
+      const adminRef = doc(db, 'admin', email);
+      const adminSnap = await getDoc(adminRef);
+      
+      if (adminSnap.exists()) {
+        console.log('✅ Admin found:', adminSnap.data());
+        onLogin(userCred.user, 'admin');
+        return;
+      }
+
+      // 🔍 Check if user is supervisor (email is a field, not document ID)
+      console.log('🔍 Checking supervisor collection...');
+      const supervisorQuery = query(
+        collection(db, 'supervisor'),
+        where('email', '==', email)
+      );
+      const supervisorSnap = await getDocs(supervisorQuery);
+      
+      if (!supervisorSnap.empty) {
+        console.log('✅ Supervisor found:', supervisorSnap.docs[0].data());
+        onLogin(userCred.user, 'supervisor');
+        return;
+      }
+
+      // If neither admin nor supervisor
+      console.log('❌ User not found in admin or supervisor collections');
+      alert('❌ Unauthorized: Not an admin or supervisor.');
+      
+    } catch (error) {
+      console.error('❌ Login error:', error);
+      alert(`Login failed: ${error.message}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleLogin();
+    }
+  };
+
+  return (
+    
+
+
+      
+
+📍 Attendance Portal
+
+
+      
+
+
+        
+
+Admin / Supervisor Login
+
+
+         setEmail(e.target.value)}
+          onKeyPress={handleKeyPress}
+          style={styles.input}
+          disabled={loading}
+        />
+         setPassword(e.target.value)}
+          onKeyPress={handleKeyPress}
+          style={styles.input}
+          disabled={loading}
+        />
+        
+          {loading ? '🔄 Logging in...' : '🔐 Login'}
+        
+      
+
+
+    
+
+
+  );
+};
+
+const styles = {
+  container: {
+    backgroundColor: '#f4f7f9',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  header: {
+    color: '#333',
+    fontSize: '28px',
+    marginBottom: '30px',
+  },
+  loginBox: {
+    backgroundColor: '#fff',
+    padding: '30px',
+    borderRadius: '12px',
+    boxShadow: '0 0 20px rgba(0,0,0,0.1)',
+    width: '320px',
+    textAlign: 'center',
+  },
+  loginTitle: {
+    marginBottom: '20px',
+    color: '#222',
+  },
+  input: {
+    width: '100%',
+    padding: '10px',
+    margin: '10px 0',
+    fontSize: '16px',
+    borderRadius: '6px',
+    border: '1px solid #ccc',
+    boxSizing: 'border-box',
+  },
+  button: {
+    width: '100%',
+    padding: '12px',
+    fontSize: '16px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  },
+};
+
+export default AdminLogin;
+
+
+
+
+import React, { useEffect, useState } from 'react';
+import { db } from '../firebaseConfig';
+import { collection, getDocs } from 'firebase/firestore';
+
+const AttendanceLogs = () => {
+  const [logs, setLogs] = useState([]);
+
+  useEffect(() => {
+    const fetchAttendance = async () => {
+      const snap = await getDocs(collection(db, 'attendance'));
+      const logsArray = [];
+
+      for (const doc of snap.docs) {
+        const data = doc.data();
+
+        // Optional: fetch employee name from employee collection
+        let empName = '';
+        try {
+          const empSnap = await getDocs(collection(db, 'employee'));
+          empSnap.forEach(emp => {
+            if (emp.id === data.empid.trim()) {
+              empName = emp.data().name;
+            }
+          });
+        } catch (e) {
+          empName = '';
+        }
+
+        logsArray.push({
+          id: doc.id,
+          empid: data.empid?.trim(),
+          empName: empName || "Unknown",
+          siteid: data.siteid?.trim(),
+          timestamp: data.timestamp?.toDate().toLocaleString(),
+          type: data.type,
+        });
+      }
+
+      setLogs(logsArray);
+    };
+
+    fetchAttendance();
+  }, []);
+
+  return (
+    
+
+
+      
+
+📋 Attendance Logs
+
+
+      
+          {logs.map(log => (
+            
+          ))}
+        
+
+
+        
+          
+            Employee ID
+            Name
+            Site ID
+            Type
+            Timestamp
+          
+        
+        
+              {log.empid}
+              {log.empName}
+              {log.siteid}
+              {log.type}
+              {log.timestamp}
+            
+      
+
+
+    
+
+
+  );
+};
+
+const styles = {
+  container: {
+    padding: 20,
+    fontFamily: 'Arial',
+  },
+  table: {
+    width: '100%',
+    borderCollapse: 'collapse',
+    marginTop: 20,
+  },
+  th: {
+    backgroundColor: '#f4f4f4',
+    padding: 10,
+    border: '1px solid #ccc',
+  },
+  td: {
+    padding: 10,
+    border: '1px solid #ccc',
+  },
+};
+
+export default AttendanceLogs;
+
+
+
+// src/pages/Dashboard.js
+
+
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import { db } from "../firebaseConfig";
+import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
+// ⬆️ Outside the component, keep imports as is
+
+const Dashboard = ({ user, onLogout }) => {
+    const navigate = useNavigate();
+  const [activeMap, setActiveMap] = useState({});
+
+  const fetchActiveEmployees = async () => {
+    const empDocs = await getDocs(collection(db, "employee"));
+    const siteDocs = await getDocs(collection(db, "Sites"));
+    const attDocs = await getDocs(query(collection(db, "attendance"), orderBy("timestamp", "asc")));
+
+    const empMap = {};
+    empDocs.forEach((doc) => {
+      empMap[doc.id.trim()] = doc.data().name || "Unknown";
+    });
+
+    const siteMap = {};
+    siteDocs.forEach((doc) => {
+      siteMap[doc.id.trim()] = doc.data().name || doc.id;
+    });
+
+    const lastCheck = {};
+    attDocs.forEach((doc) => {
+      const { empid, siteid, type } = doc.data();
+      lastCheck[empid?.trim()] = {
+        type: type.trim().toLowerCase(),
+        siteid: siteid?.trim(),
+      };
+    });
+
+    const activeEmployeesBySite = {};
+    Object.entries(lastCheck).forEach(([empId, { type, siteid }]) => {
+      if (type === "check in") {
+        const siteName = siteMap[siteid] || siteid;
+        const empName = empMap[empId] || empId;
+
+        if (!activeEmployeesBySite[siteName]) {
+          activeEmployeesBySite[siteName] = [];
+        }
+        activeEmployeesBySite[siteName].push(empName);
+      }
+    });
+
+    setActiveMap(activeEmployeesBySite);
+  };
+
+  useEffect(() => {
+    fetchActiveEmployees();
+  }, []);
+  return (
+    
+
+
+      
+
+
+        
+
+📍 Location-Based Attendance Portal
+
+
+        Logout
+      
+
+
+
+      
+
+👋 Welcome, {user.email}
+
+
+
+      
+
+
+         navigate('/employees')} style={styles.navButton}>👥 Employees
+         navigate('/sites')} style={styles.navButton}>🏗️ Sites
+         navigate('/attendance')} style={styles.navButton}>
+  📅 Attendance
+
+      
+
+
+
+      
+
+
+  
+
+📍 Active Employees in Sites
+
+
+   
+    🔁 Refresh
+  
+  
+
+
+    {Object.entries(activeMap).map(([siteName, employees]) => (
+      
+
+
+        {siteName} ➜ {employees.join(", ")}
+      
+
+
+    ))}
+  
+
+
+
+
+
+    
+
+
+  );
+};
+
+const styles = {
+  container: {
+    padding: 20,
+    fontFamily: 'sans-serif',
+  },
+  topBar: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  logout: {
+    padding: '8px 16px',
+    backgroundColor: '#e74c3c',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+  },
+  welcome: {
+    marginTop: 10,
+    fontSize: '20px',
+    color: '#333',
+  },
+  buttonGroup: {
+    marginTop: 20,
+    display: 'flex',
+    gap: 20,
+  },
+  navButton: {
+    padding: '14px 24px',
+    fontSize: '16px',
+    borderRadius: '8px',
+    backgroundColor: '#3498db',
+    color: '#fff',
+    border: 'none',
+    cursor: 'pointer',
+  },
+  summary: {
+    marginTop: 30,
+    backgroundColor: '#f0f0f0',
+    padding: 20,
+    borderRadius: 10,
+  },
+};
+
+export default Dashboard;
+
+
+
+// Make sure to install:
+// npm install react-select emailjs-com xlsx firebase
+
+import React, { useEffect, useState } from "react";
+import { db, auth } from "../firebaseConfig";
+import {
+    collection,
+    getDocs,
+    addDoc,
+    updateDoc,
+    deleteDoc,
+    doc,
+    query,
+    where,
+
+} from "firebase/firestore";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import * as XLSX from "xlsx";
+import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
+import Select from "react-select";
+
+const sendPasswordEmail = (employee, password) => {
+    return emailjs.send(
+        "service_bo2xhjl",
+        "template_enf0ua8",
+        {
+            to_name: employee.name,
+            to_email: employee.email,
+            empId: employee.empId,
+            password: password,
+        },
+        "1pu5ao58P1xbDV1Hb"
+    );
+};
+
+const Employees = () => {
+    const [employees, setEmployees] = useState([]);
+    const [form, setForm] = useState({ name: "", email: "", assigned: [] });
+    const [editingId, setEditingId] = useState(null);
+    const [siteOptions, setSiteOptions] = useState([]);
+    const [search, setSearch] = useState("");
+    const [selectedEmployee, setSelectedEmployee] = useState(null);
+    const [employeeLogs, setEmployeeLogs] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [showLogs, setShowLogs] = useState(false);
+    const navigate = useNavigate();
+    const [dateFrom, setDateFrom] = useState("");
+const [dateTo, setDateTo] = useState("");
+
+
+    const filteredEmployees = employees.filter(emp =>
+        emp.name?.toLowerCase().includes(search.toLowerCase()) ||
+        emp.email?.toLowerCase().includes(search.toLowerCase()) ||
+        emp.empId?.toLowerCase().includes(search.toLowerCase())
+    );
+
+    const fetchEmployees = async () => {
+        try {
+            const empSnap = await getDocs(collection(db, "employee"));
+            const list = empSnap.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+            setEmployees(list);
+        } catch (error) {
+            console.error("Error fetching employees:", error);
+            alert("Failed to fetch employees");
+        }
+    };
+
+    const fetchSites = async () => {
+        try {
+            const snap = await getDocs(collection(db, "Sites"));
+            setSiteOptions(
+                snap.docs.map((d) => ({ label: d.data().name, value: d.data().name }))
+            );
+        } catch (error) {
+            console.error("Error fetching sites:", error);
+        }
+    };
+
+    const viewLogs = async (emp, fromDate = null, toDate = null) => {
+    if (!emp.empId) {
+        alert("Employee ID is missing. Cannot fetch logs.");
+        return;
+    }
+
+    console.log("Searching for logs with empId:", emp.empId);
+    setLoading(true);
+    
+    try {
+        // Query without orderBy to avoid index requirement
+        let q = query(
+            collection(db, "attendance"),
+            where("empId", "==", emp.empId)
+        );
+
+        const querySnapshot = await getDocs(q);
+        let logs = querySnapshot.docs.map(doc => doc.data());
+        
+        console.log("Found logs before filtering:", logs.length);
+
+        // Sort by timestamp in JavaScript
+        logs.sort((a, b) => {
+            const timeA = a.timestamp?.toDate ? a.timestamp.toDate() : new Date(a.timestamp);
+            const timeB = b.timestamp?.toDate ? b.timestamp.toDate() : new Date(b.timestamp);
+            return timeB - timeA; // Descending order (newest first)
+        });
+
+        // Apply date range filter
+        if (fromDate || toDate) {
+            const originalCount = logs.length;
+            logs = logs.filter((log) => {
+                const logDate = log.timestamp?.toDate ? 
+                    log.timestamp.toDate().toISOString().slice(0, 10) :
+                    new Date(log.timestamp).toISOString().slice(0, 10);
+                
+                let includeLog = true;
+                
+                // Check from date
+                if (fromDate && logDate < fromDate) {
+                    includeLog = false;
+                }
+                
+                // Check to date
+                if (toDate && logDate > toDate) {
+                    includeLog = false;
+                }
+                
+                return includeLog;
+            });
+            console.log(`Filtered from ${originalCount} to ${logs.length} logs for date range: ${fromDate || 'start'} to ${toDate || 'end'}`);
+        }
+
+        setSelectedEmployee(emp);
+        setEmployeeLogs(logs);
+        setShowLogs(true);
+        
+        console.log("Successfully loaded", logs.length, "logs");
+        
+    } catch (error) {
+        console.error("Error fetching logs:", error);
+        alert("Failed to fetch attendance logs: " + error.message);
+    } finally {
+        setLoading(false);
+    }
+};
+
+
+    useEffect(() => {
+        fetchEmployees();
+        fetchSites();
+    }, []);
+
+    const generateEmpId = (index) => `emp${String(index + 1).padStart(3, "0")}`;
+    const generatePassword = () => Math.random().toString(36).slice(-8);
+
+    const addEmployee = async () => {
+        if (!form.name.trim() || !form.email.trim()) {
+            return alert("Name and Email are required.");
+        }
+
+        setLoading(true);
+        try {
+            const newId = generateEmpId(employees.length);
+            const password = generatePassword();
+
+            await createUserWithEmailAndPassword(auth, form.email, password);
+
+            await addDoc(collection(db, "employee"), {
+                empId: newId,
+                name: form.name.trim(),
+                email: form.email.trim(),
+                assigned: form.assigned,
+                active: true,
+            });
+
+            await sendPasswordEmail({ ...form, empId: newId }, password);
+
+            alert(`✅ Employee added successfully! Password sent to ${form.email}`);
+            setForm({ name: "", email: "", assigned: [] });
+            fetchEmployees();
+        } catch (error) {
+            console.error("Add Error:", error);
+            alert("❌ Failed to add employee: " + error.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const updateEmployee = async () => {
+        if (!form.name.trim() || !form.email.trim()) {
+            return alert("Name and Email are required.");
+        }
+
+        setLoading(true);
+        try {
+            const ref = doc(db, "employee", editingId);
+            await updateDoc(ref, {
+                name: form.name.trim(),
+                email: form.email.trim(),
+                assigned: form.assigned,
+            });
+            alert("✅ Employee updated successfully");
+            setForm({ name: "", email: "", assigned: [] });
+            setEditingId(null);
+            fetchEmployees();
+        } catch (error) {
+            console.error("Update Error:", error);
+            alert("❌ Failed to update employee");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleEdit = (emp) => {
+        setEditingId(emp.id);
+        setForm({
+            name: emp.name,
+            email: emp.email,
+            assigned: emp.assigned || [],
+        });
+    };
+
+    const handleDelete = async (id) => {
+        if (!window.confirm("Are you sure you want to delete this employee?")) return;
+
+        setLoading(true);
+        try {
+            await deleteDoc(doc(db, "employee", id));
+            alert("✅ Employee deleted successfully");
+            fetchEmployees();
+        } catch (error) {
+            console.error("Delete Error:", error);
+            alert("❌ Failed to delete employee");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleExcelUpload = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        // Validate file type
+        const fileType = file.name.split('.').pop().toLowerCase();
+        if (!['xlsx', 'xls'].includes(fileType)) {
+            alert("Please upload a valid Excel file (.xlsx or .xls)");
+            return;
+        }
+
+        setLoading(true);
+        try {
+            const data = await file.arrayBuffer();
+            const workbook = XLSX.read(data);
+            const sheet = workbook.Sheets[workbook.SheetNames[0]];
+            const json = XLSX.utils.sheet_to_json(sheet);
+
+            if (json.length === 0) {
+                alert("Excel file is empty or invalid format");
+                return;
+            }
+
+            let successCount = 0;
+            let failCount = 0;
+            const errors = [];
+
+            for (let i = 0; i < json.length; i++) {
+                const emp = json[i];
+
+                // Validate required fields
+                if (!emp.name || !emp.email) {
+                    console.warn(`Skipping row ${i + 1}: Missing name or email`);
+                    errors.push(`Row ${i + 1}: Missing name or email`);
+                    failCount++;
+                    continue;
+                }
+
+                // Check if email already exists
+                const existingEmployee = employees.find(e => e.email.toLowerCase() === emp.email.toLowerCase());
+                if (existingEmployee) {
+                    console.warn(`Skipping row ${i + 1}: Email ${emp.email} already exists`);
+                    errors.push(`Row ${i + 1}: Email ${emp.email} already exists`);
+                    failCount++;
+                    continue;
+                }
+
+                const empId = generateEmpId(employees.length + successCount);
+                const password = generatePassword();
+
+                try {
+                    // Try to create Firebase Auth user
+                    await createUserWithEmailAndPassword(auth, emp.email, password);
+
+                    const assignedSites = emp.assigned
+                        ? emp.assigned.toString().split(",").map((s) => s.trim()).filter(s => s)
+                        : [];
+
+                    // Add to Firestore
+                    await addDoc(collection(db, "employee"), {
+                        empId,
+                        name: emp.name.trim(),
+                        email: emp.email.trim(),
+                        assigned: assignedSites,
+                        active: true,
+                    });
+
+                    // Send email
+                    try {
+                        await sendPasswordEmail({ ...emp, empId }, password);
+                    } catch (emailError) {
+                        console.warn(`Email failed for ${emp.email}:`, emailError);
+                        // Don't fail the entire process if email fails
+                    }
+
+                    successCount++;
+                } catch (err) {
+                    console.warn(`Failed to add ${emp.email}:`, err);
+                    errors.push(`Row ${i + 1}: ${err.message}`);
+                    failCount++;
+                }
+            }
+
+            let message = `✅ Excel upload completed!\n✅ Successfully added: ${successCount}\n❌ Failed: ${failCount}`;
+            if (errors.length > 0 && errors.length <= 5) {
+                message += `\n\nErrors:\n${errors.join('\n')}`;
+            } else if (errors.length > 5) {
+                message += `\n\nFirst 5 errors:\n${errors.slice(0, 5).join('\n')}\n...and ${errors.length - 5} more`;
+            }
+
+            alert(message);
+            fetchEmployees();
+        } catch (error) {
+            console.error("Excel upload error:", error);
+            alert("❌ Failed to process Excel file: " + error.message);
+        } finally {
+            setLoading(false);
+            // Clear file input
+            e.target.value = '';
+        }
+    };
+
+    const resetForm = () => {
+        setEditingId(null);
+        setForm({ name: "", email: "", assigned: [] });
+    };
+
+    const closeLogs = () => {
+    setShowLogs(false);
+    setSelectedEmployee(null);
+    setEmployeeLogs([]);
+    setDateFrom(""); // Reset from date
+    setDateTo("");   // Reset to date
+};
+
+    return (
+        
+
+
+            
+
+
+                 navigate(-1)} style={styles.backBtn}>
+                    ← Back
+                
+                
+
+Employee Management
+
+
+            
+
+
+
+            {/* Add/Edit Employee Form */}
+            
+
+
+                
+
+
+                    {editingId ? "Edit Employee" : "Add New Employee"}
+                
+
+
+                
+
+
+                     setForm({ ...form, name: e.target.value })}
+                        style={styles.input}
+                        disabled={loading}
+                    />
+                     setForm({ ...form, email: e.target.value })}
+                        style={styles.input}
+                        disabled={loading}
+                    />
+                
+
+
+                
+
+
+                    Assigned Sites:
+                     ({ label: v, value: v }))}
+                        onChange={(vals) => setForm({ ...form, assigned: vals ? vals.map((v) => v.value) : [] })}
+                        placeholder="Select sites..."
+                        isDisabled={loading}
+                        styles={customSelectStyles}
+                    />
+                
+                
+
+
+                    
+                        {loading ? "Processing..." : (editingId ? "Save Changes" : "Add Employee")}
+                    
+                    {editingId && (
+                        
+                            Cancel
+                        
+                    )}
+                
+
+
+            
+
+            {/* Excel Upload */}
+            
+
+
+                
+
+Bulk Upload
+
+
+                
+
+
+                    
+
+
+                    
+
+
+                        Upload an Excel file with columns: name, email, assigned (comma-separated sites)
+                    
+
+
+                
+
+
+            
+
+
+
+            {/* Employee List */}
+            
+
+
+                
+
+
+                    
+
+Employee List ({employees.length})
+
+
+                     setSearch(e.target.value)}
+                        style={styles.searchInput}
+                    />
+                
+
+
+
+                
+
+
+                    
+                            {filteredEmployees.map((emp) => (
+                                
+                            ))}
+                        
+
+
+                        
+                            
+                                ID
+                                Name
+                                Email
+                                Sites
+                                Actions
+                            
+                        
+                        
+                                    {emp.empId}
+                                    {emp.name}
+                                    {emp.email}
+                                    
+                                        {(emp.assigned || []).length > 0
+                                            ? (emp.assigned || []).join(", ")
+                                            : "No sites assigned"
+                                        }
+                                    
+                                    
+                                        
+
+
+                                             handleEdit(emp)}
+                                                style={styles.editBtn}
+                                                disabled={loading}
+                                                title="Edit"
+                                            >
+                                                ✏️
+                                            
+                                             viewLogs(emp)}
+                                                style={styles.logsBtn}
+                                                disabled={loading}
+                                                title="View Logs"
+                                            >
+                                                📋
+                                            
+                                             handleDelete(emp.id)}
+                                                style={styles.deleteBtn}
+                                                disabled={loading}
+                                                title="Delete"
+                                            >
+                                                🗑️
+                                            
+                                        
+
+
+                                    
+                                
+                    
+
+
+                    {filteredEmployees.length === 0 && (
+                        
+
+
+                            {search ? "No employees found matching your search." : "No employees added yet."}
+                        
+
+
+                    )}
+                
+
+
+            
+
+
+
+            {/* Logs Modal */}
+            {showLogs && selectedEmployee && (
+                
+
+
+                    
+
+
+                        
+
+
+                            
+
+
+                                Attendance Logs - {selectedEmployee.name}
+                            
+
+
+                            
+                                ✕
+                            
+                        
+
+
+
+                        
+
+
+    
+
+
+        Filter by date range:
+         {
+                setDateFrom("");
+                setDateTo("");
+                if (selectedEmployee) {
+                    viewLogs(selectedEmployee);
+                }
+            }}
+            style={styles.clearFilterBtn}
+        >
+            Clear Filter
+        
+    
+
+
+    
+
+
+        
+
+
+            From:
+             {
+                    const newFromDate = e.target.value;
+                    setDateFrom(newFromDate);
+                    if (selectedEmployee) {
+                        viewLogs(selectedEmployee, newFromDate, dateTo);
+                    }
+                }}
+                style={styles.dateInput}
+            />
+        
+
+
+        
+
+
+            To:
+             {
+                    const newToDate = e.target.value;
+                    setDateTo(newToDate);
+                    if (selectedEmployee) {
+                        viewLogs(selectedEmployee, dateFrom, newToDate);
+                    }
+                }}
+                style={styles.dateInput}
+            />
+        
+
+
+    
+
+
+    {(dateFrom || dateTo) && (
+        
+
+
+            Showing logs from {dateFrom || 'beginning'} to {dateTo || 'now'}
+        
+
+
+    )}
+
+
+
+
+                        
+
+
+                            {employeeLogs.length > 0 ? (
+                                
+                                        {employeeLogs.map((log, i) => (
+                                            
+                                        ))}
+                                    
+
+
+                                    
+                                        
+                                            Date & Time
+                                            Site
+                                            Type
+                                        
+                                    
+                                    
+                                                
+                                                    {new Date(log.timestamp.toDate()).toLocaleString()}
+                                                
+                                                {log.siteId || log.siteid || 'N/A'}
+                                                
+                                                    
+                                                        {log.type}
+                                                    
+                                                
+                                            
+                                
+
+
+                            ) : (
+                                
+
+
+                                    
+                                
+
+
+                            )}
+                        
+
+
+                    
+
+
+                
+
+
+            )}
+        
+
+
+    );
+};
+
+const customSelectStyles = {
+    control: (provided) => ({
+        ...provided,
+        borderRadius: '8px',
+        border: '1px solid #ddd',
+        minHeight: '42px',
+    }),
+    multiValue: (provided) => ({
+        ...provided,
+        backgroundColor: '#e3f2fd',
+    }),
+    multiValueLabel: (provided) => ({
+        ...provided,
+        color: '#1565c0',
+    }),
+};
+
+const styles = {
+    container: {
+        padding: '20px',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        backgroundColor: '#f8fafc',
+        minHeight: '100vh',
+    },
+    header: {
+        display: 'flex',
+        alignItems: 'center',
+        marginBottom: '30px',
+        gap: '15px',
+    },
+    backBtn: {
+        background: 'transparent',
+        border: 'none',
+        fontSize: '16px',
+        cursor: 'pointer',
+        color: '#666',
+        padding: '8px 12px',
+        borderRadius: '6px',
+        transition: 'background-color 0.2s',
+    },
+    title: {
+        fontSize: '28px',
+        fontWeight: '600',
+        color: '#1a1a1a',
+        margin: 0,
+    },
+    card: {
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        padding: '24px',
+        marginBottom: '24px',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+        border: '1px solid #e2e8f0',
+    },
+    cardTitle: {
+        fontSize: '18px',
+        fontWeight: '600',
+        color: '#1a1a1a',
+        marginBottom: '20px',
+        margin: 0,
+    },
+    cardHeader: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '20px',
+        flexWrap: 'wrap',
+        gap: '10px',
+    },
+    formGrid: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+        gap: '16px',
+        marginBottom: '16px',
+    },
+    input: {
+        padding: '12px 16px',
+        border: '1px solid #ddd',
+        borderRadius: '8px',
+        fontSize: '14px',
+        transition: 'border-color 0.2s',
+        fontFamily: 'inherit',
+    },
+    searchInput: {
+        padding: '10px 16px',
+        border: '1px solid #ddd',
+        borderRadius: '8px',
+        fontSize: '14px',
+        minWidth: '250px',
+        fontFamily: 'inherit',
+    },
+    selectContainer: {
+        marginBottom: '20px',
+    },
+    label: {
+        display: 'block',
+        marginBottom: '8px',
+        fontSize: '14px',
+        fontWeight: '500',
+        color: '#374151',
+    },
+    buttonGroup: {
+        display: 'flex',
+        gap: '12px',
+        alignItems: 'center',
+    },
+    primaryBtn: {
+        padding: '12px 24px',
+        backgroundColor: '#3b82f6',
+        color: 'white',
+        border: 'none',
+        borderRadius: '8px',
+        fontSize: '14px',
+        fontWeight: '500',
+        cursor: 'pointer',
+        transition: 'background-color 0.2s',
+        fontFamily: 'inherit',
+    },
+    secondaryBtn: {
+        padding: '12px 24px',
+        backgroundColor: '#f1f5f9',
+        color: '#64748b',
+        border: '1px solid #e2e8f0',
+        borderRadius: '8px',
+        fontSize: '14px',
+        fontWeight: '500',
+        cursor: 'pointer',
+        transition: 'all 0.2s',
+        fontFamily: 'inherit',
+    },
+    uploadSection: {
+        textAlign: 'center',
+        padding: '20px',
+        border: '2px dashed #cbd5e1',
+        borderRadius: '8px',
+        backgroundColor: '#f8fafc',
+    },
+    fileInput: {
+        marginBottom: '12px',
+        padding: '8px',
+        fontSize: '14px',
+        fontFamily: 'inherit',
+    },
+    helpText: {
+        fontSize: '14px',
+        color: '#64748b',
+        margin: 0,
+    },
+    tableContainer: {
+        overflowX: 'auto',
+        borderRadius: '8px',
+        border: '1px solid #e2e8f0',
+    },
+    table: {
+        width: '100%',
+        borderCollapse: 'collapse',
+        fontSize: '14px',
+    },
+    tableHeader: {
+        backgroundColor: '#f8fafc',
+    },
+    th: {
+        padding: '12px 16px',
+        textAlign: 'left',
+        fontWeight: '600',
+        color: '#374151',
+        borderBottom: '1px solid #e2e8f0',
+    },
+    tableRow: {
+        borderBottom: '1px solid #f1f5f9',
+        transition: 'background-color 0.2s',
+    },
+    td: {
+        padding: '12px 16px',
+        borderBottom: '1px solid #f1f5f9',
+        verticalAlign: 'middle',
+    },
+    actionButtons: {
+        display: 'flex',
+        gap: '8px',
+        alignItems: 'center',
+    },
+    editBtn: {
+        padding: '6px 10px',
+        backgroundColor: '#fef3c7',
+        color: '#92400e',
+        border: 'none',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontSize: '14px',
+        transition: 'background-color 0.2s',
+    },
+    logsBtn: {
+        padding: '6px 10px',
+        backgroundColor: '#dbeafe',
+        color: '#1e40af',
+        border: 'none',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontSize: '14px',
+        transition: 'background-color 0.2s',
+    },
+    deleteBtn: {
+        padding: '6px 10px',
+        backgroundColor: '#fee2e2',
+        color: '#dc2626',
+        border: 'none',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontSize: '14px',
+        transition: 'background-color 0.2s',
+    },
+    noData: {
+        textAlign: 'center',
+        padding: '40px 20px',
+        color: '#64748b',
+        fontSize: '14px',
+    },
+    modal: {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 1000,
+        padding: '20px',
+    },
+    modalContent: {
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        maxWidth: '800px',
+        width: '100%',
+        maxHeight: '80vh',
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+    },
+    modalHeader: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '20px 24px',
+        borderBottom: '1px solid #e2e8f0',
+    },
+    modalTitle: {
+        fontSize: '18px',
+        fontWeight: '600',
+        color: '#1a1a1a',
+        margin: 0,
+    },
+    closeBtn: {
+        background: 'none',
+        border: 'none',
+        fontSize: '20px',
+        cursor: 'pointer',
+        color: '#64748b',
+        padding: '4px',
+        borderRadius: '4px',
+        lineHeight: 1,
+    },
+    filterSection: {
+        padding: '20px 24px',
+        borderBottom: '1px solid #e2e8f0',
+        backgroundColor: '#f8fafc',
+    },
+    dateInput: {
+        padding: '8px 12px',
+        border: '1px solid #ddd',
+        borderRadius: '6px',
+        fontSize: '14px',
+        marginTop: '8px',
+        fontFamily: 'inherit',
+    },
+    logsContainer: {
+        flex: 1,
+        overflow: 'auto',
+        padding: '20px 24px',
+    },
+    badge: {
+        padding: '4px 8px',
+        borderRadius: '12px',
+        fontSize: '12px',
+        fontWeight: '500',
+        textTransform: 'capitalize',
+    },
+    filterTitle: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '12px',
+    },
+    clearFilterBtn: {
+        padding: '6px 12px',
+        backgroundColor: '#f1f5f9',
+        color: '#64748b',
+        border: '1px solid #e2e8f0',
+        borderRadius: '6px',
+        fontSize: '12px',
+        cursor: 'pointer',
+        fontFamily: 'inherit',
+    },
+    dateRangeContainer: {
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '16px',
+        marginBottom: '12px',
+    },
+    dateInputGroup: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '4px',
+    },
+    smallLabel: {
+        fontSize: '12px',
+        fontWeight: '500',
+        color: '#374151',
+    },
+    filterSummary: {
+        fontSize: '12px',
+        color: '#6b7280',
+        fontStyle: 'italic',
+        textAlign: 'center',
+        padding: '8px',
+        backgroundColor: '#f9fafb',
+        borderRadius: '4px',
+    },
+};
+
+export default Employees;
+
+
+import React, { useState, useEffect } from "react";
+import { db } from "../firebaseConfig";
+import {
+    collection,
+    getDocs,
+    addDoc,
+    updateDoc,
+    deleteDoc,
+    doc,
+    query,
+    where,
+    orderBy,
+    limit
+} from "firebase/firestore";
+import * as XLSX from "xlsx";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+// Fix for default markers
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+});
+
+const SiteControlPage = () => {
+    const [sites, setSites] = useState([]);
+    const [siteForm, setSiteForm] = useState({ name: "", address: "", lat: "", lng: "" });
+    const [expandedSiteId, setExpandedSiteId] = useState(null);
+    const [mapVisible, setMapVisible] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [editingSite, setEditingSite] = useState(null);
+    const [searchTerm, setSearchTerm] = useState("");
+
+    useEffect(() => {
+        fetchSites();
+    }, []);
+
+    // Generate auto-incremented site ID like site001, site002, etc.
+    const generateSiteId = async () => {
+        const siteSnap = await getDocs(collection(db, "Sites"));
+        const existingSiteIds = siteSnap.docs.map(doc => doc.data().siteId);
+        
+        // Extract numbers from existing site IDs and find the highest
+        const maxNumber = existingSiteIds
+            .filter(id => id && id.startsWith("site"))
+            .map(id => parseInt(id.replace("site", "")))
+            .filter(num => !isNaN(num))
+            .reduce((max, current) => Math.max(max, current), 0);
+        
+        const nextNumber = maxNumber + 1;
+        return `site${nextNumber.toString().padStart(3, '0')}`;
+    };
+
+    const fetchSites = async () => {
+        setIsLoading(true);
+        try {
+            const siteSnap = await getDocs(collection(db, "Sites"));
+            const siteData = [];
+
+            for (let docSnap of siteSnap.docs) {
+                const site = docSnap.data();
+                site.docId = docSnap.id;
+
+                // Get assigned employees based on site name
+                const empSnap = await getDocs(
+                    query(collection(db, "employee"), where("assigned", "array-contains", site.name))
+                );
+                site.employees = empSnap.docs.map(doc => doc.data());
+
+                // Get active employees (those who are currently checked in)
+                const activeEmployees = [];
+                for (let emp of site.employees) {
+                    // Get the latest attendance record for this employee at this site
+                    const latestAttendanceSnap = await getDocs(
+                        query(
+                            collection(db, "attendance"),
+                            where("empId", "==", emp.empId),
+                            where("siteId", "==", site.siteId),
+                            orderBy("timestamp", "desc"),
+                            limit(1)
+                        )
+                    );
+                    
+                    if (!latestAttendanceSnap.empty) {
+                        const latestRecord = latestAttendanceSnap.docs[0].data();
+                        emp.lastCheckIn = latestRecord.timestamp?.toDate()?.toLocaleString() || "No record";
+                        
+                        // Employee is active if their last record is check in
+                        if (latestRecord.type.toLowerCase().includes("check in")) {
+                            activeEmployees.push(emp);
+                        }
+                    } else {
+                        emp.lastCheckIn = "No record";
+                    }
+                }
+
+                site.activeCount = activeEmployees.length;
+                siteData.push(site);
+            }
+
+            setSites(siteData);
+        } catch (error) {
+            console.error("Error fetching sites:", error);
+            alert("Error fetching sites. Please try again.");
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    const handleAddSite = async () => {
+        const { name, address, lat, lng } = siteForm;
+        if (!name || !address || !lat || !lng) {
+            alert("Please fill all fields");
+            return;
+        }
+
+        if (isNaN(parseFloat(lat)) || isNaN(parseFloat(lng))) {
+            alert("Please enter valid latitude and longitude values");
+            return;
+        }
+
+        setIsLoading(true);
+        try {
+            const siteId = await generateSiteId();
+            
+            await addDoc(collection(db, "Sites"), {
+                siteId,
+                name: name.trim(),
+                address: address.trim(),
+                lat: parseFloat(lat),
+                lng: parseFloat(lng),
+            });
+
+            setSiteForm({ name: "", address: "", lat: "", lng: "" });
+            await fetchSites();
+            alert("Site added successfully!");
+        } catch (error) {
+            console.error("Error adding site:", error);
+            alert("Error adding site. Please try again.");
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    const handleEditSite = async (site) => {
+        const { name, address, lat, lng } = siteForm;
+        if (!name || !address || !lat || !lng) {
+            alert("Please fill all fields");
+            return;
+        }
+
+        setIsLoading(true);
+        try {
+            await updateDoc(doc(db, "Sites", site.docId), {
+                name: name.trim(),
+                address: address.trim(),
+                lat: parseFloat(lat),
+                lng: parseFloat(lng),
+            });
+
+            setSiteForm({ name: "", address: "", lat: "", lng: "" });
+            setEditingSite(null);
+            await fetchSites();
+            alert("Site updated successfully!");
+        } catch (error) {
+            console.error("Error updating site:", error);
+            alert("Error updating site. Please try again.");
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    const handleDeleteSite = async (id, siteName) => {
+        if (window.confirm(`Are you sure you want to delete site "${siteName}"?`)) {
+            setIsLoading(true);
+            try {
+                await deleteDoc(doc(db, "Sites", id));
+                await fetchSites();
+                alert("Site deleted successfully!");
+            } catch (error) {
+                console.error("Error deleting site:", error);
+                alert("Error deleting site. Please try again.");
+            } finally {
+                setIsLoading(false);
+            }
+        }
+    };
+
+    const handleUpload = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        setIsLoading(true);
+        
+        const reader = new FileReader();
+        reader.onload = async (event) => {
+            try {
+                const data = new Uint8Array(event.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                
+                // Get first worksheet
+                const firstSheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[firstSheetName];
+                
+                // Convert to JSON
+                const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+                
+                // Skip header row and convert to objects
+                const headers = jsonData[0];
+                const rows = jsonData.slice(1).map(row => {
+                    const obj = {};
+                    headers.forEach((header, index) => {
+                        obj[header.toLowerCase()] = row[index];
+                    });
+                    return obj;
+                });
+
+                const validRows = rows.filter(row => 
+                    row.name && row.address && row.lat && row.lng &&
+                    !isNaN(parseFloat(row.lat)) && !isNaN(parseFloat(row.lng))
+                );
+
+                if (validRows.length === 0) {
+                    alert("No valid rows found in Excel file. Please check your file format.");
+                    setIsLoading(false);
+                    return;
+                }
+
+                const batch = [];
+                for (let row of validRows) {
+                    const siteId = await generateSiteId();
+                    batch.push(addDoc(collection(db, "Sites"), {
+                        name: row.name.toString().trim(),
+                        address: row.address.toString().trim(),
+                        lat: parseFloat(row.lat),
+                        lng: parseFloat(row.lng),
+                        siteId
+                    }));
+                }
+
+                await Promise.all(batch);
+                await fetchSites();
+                alert(`${validRows.length} sites uploaded successfully!`);
+            } catch (error) {
+                console.error("Error processing Excel file:", error);
+                alert("Error reading Excel file. Please check the file format.");
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        
+        reader.readAsArrayBuffer(file);
+    };
+
+    const startEditing = (site) => {
+        setEditingSite(site);
+        setSiteForm({
+            name: site.name,
+            address: site.address,
+            lat: site.lat.toString(),
+            lng: site.lng.toString()
+        });
+    };
+
+    const cancelEditing = () => {
+        setEditingSite(null);
+        setSiteForm({ name: "", address: "", lat: "", lng: "" });
+    };
+
+    // Filter sites based on search term
+    const filteredSites = sites.filter(site => 
+        site.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        site.siteId.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        site.address.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    const handleBackClick = () => {
+        window.history.back();
+    };
+
+    return (
+        
+
+
+            
+
+
+                {/* Header */}
+                
+
+
+                    
+                        ← Back
+                    
+                    
+
+Site Control Panel
+
+
+                
+
+
+
+                {/* Add/Edit Site Form */}
+                
+
+
+                    
+
+
+                        {editingSite ? "Edit Site" : "Add New Site"}
+                    
+
+
+                    
+
+
+                         setSiteForm({ ...siteForm, name: e.target.value })}
+                            style={{ 
+                                padding: "10px", 
+                                border: "1px solid #ddd", 
+                                borderRadius: "4px",
+                                fontSize: "14px"
+                            }}
+                        />
+                         setSiteForm({ ...siteForm, address: e.target.value })}
+                            style={{ 
+                                padding: "10px", 
+                                border: "1px solid #ddd", 
+                                borderRadius: "4px",
+                                fontSize: "14px"
+                            }}
+                        />
+                         setSiteForm({ ...siteForm, lat: e.target.value })}
+                            style={{ 
+                                padding: "10px", 
+                                border: "1px solid #ddd", 
+                                borderRadius: "4px",
+                                fontSize: "14px"
+                            }}
+                        />
+                         setSiteForm({ ...siteForm, lng: e.target.value })}
+                            style={{ 
+                                padding: "10px", 
+                                border: "1px solid #ddd", 
+                                borderRadius: "4px",
+                                fontSize: "14px"
+                            }}
+                        />
+                    
+
+
+                    
+
+
+                        {editingSite ? (
+                            <>
+                                 handleEditSite(editingSite)}
+                                    disabled={isLoading}
+                                    style={{ 
+                                        padding: "10px 20px", 
+                                        backgroundColor: "#28a745",
+                                        color: "white", 
+                                        border: "none", 
+                                        borderRadius: "4px",
+                                        cursor: isLoading ? "not-allowed" : "pointer"
+                                    }}
+                                >
+                                    {isLoading ? "Updating..." : "Update Site"}
+                                
+                                
+                                    Cancel
+                                
+                            
+                        ) : (
+                            
+                                {isLoading ? "Adding..." : "Add Site"}
+                            
+                        )}
+                    
+
+
+                
+
+
+
+                {/* Excel Upload */}
+                
+
+
+                    
+
+Upload Sites from Excel
+
+
+                    
+
+
+                        Excel file should contain columns: name, address, lat, lng
+                    
+
+
+                    
+                
+
+
+
+                {/* Sites List */}
+                
+
+
+                    {/* Sites Header */}
+                    
+
+
+                        
+
+
+                            
+
+
+                                All Sites ({filteredSites.length})
+                            
+
+
+                            {/* Search Bar */}
+                        
+
+
+  
+    🔍
+  
+   setSearchTerm(e.target.value)}
+    style={{
+      width: "130%",
+      padding: "10px 10px 10px 30px", // space for icon
+      border: "1px solid #ddd",
+      borderRadius: "4px",
+      fontSize: "14px"
+    }}
+  />
+
+
+
+                             setMapVisible(!mapVisible)}
+                                style={{ 
+                                    padding: "8px 15px", 
+                                    backgroundColor: mapVisible ? "#dc3545" : "#28a745", 
+                                    color: "white", 
+                                    border: "none", 
+                                    borderRadius: "4px",
+                                    cursor: "pointer"
+                                }}
+                            >
+                                {mapVisible ? "Hide Map" : "Show Map"}
+                            
+                        
+
+
+
+                        
+                    
+
+
+
+                    {/* Map */}
+                    {mapVisible && sites.length > 0 && (
+                        
+
+
+                            
+                                
+                                {sites.map((site, index) => (
+                                    
+                                        
+                                            
+
+
+                                                {site.name}
+
+                                                {site.siteId}
+
+                                                {site.address}
+
+                                                Total: {site.employees.length} | Active: {site.activeCount}
+                                            
+
+
+                                        
+                                    
+                                ))}
+                            
+                        
+
+
+                    )}
+
+                    {/* Sites Table */}
+                    
+
+
+                        {isLoading ? (
+                            
+
+
+                                Loading sites...
+                            
+
+
+                        ) : (
+                            
+
+
+                                
+                                        {filteredSites.map((site, index) => (
+                                            
+                                                
+                                                {expandedSiteId === site.docId && (
+                                                    
+                                                )}
+                                            
+                                        ))}
+                                    
+
+
+                                    
+                                        
+                                            Site ID
+                                            Name
+                                            Address
+                                            Coordinates
+                                            Total
+                                            Active
+                                            Actions
+                                        
+                                    
+                                    
+                                                    {site.siteId}
+                                                    {site.name}
+                                                    {site.address}
+                                                    
+                                                        {site.lat.toFixed(4)}, {site.lng.toFixed(4)}
+                                                    
+                                                    
+                                                        
+                                                            {site.employees.length}
+                                                        
+                                                    
+                                                    
+                                                         0 ? "#28a745" : "#ffc107", 
+                                                            color: "white",
+                                                            padding: "4px 8px", 
+                                                            borderRadius: "4px",
+                                                            fontSize: "12px"
+                                                        }}>
+                                                            {site.activeCount}
+                                                        
+                                                    
+                                                    
+                                                        
+
+
+                                                             startEditing(site)}
+                                                                style={{ 
+                                                                    padding: "5px 10px", 
+                                                                    backgroundColor: "#ffc107", 
+                                                                    color: "white", 
+                                                                    border: "none", 
+                                                                    borderRadius: "4px", 
+                                                                    cursor: "pointer",
+                                                                    fontSize: "12px"
+                                                                }}
+                                                            >
+                                                                Edit
+                                                            
+                                                             handleDeleteSite(site.docId, site.name)}
+                                                                style={{ 
+                                                                    padding: "5px 10px", 
+                                                                    backgroundColor: "#dc3545", 
+                                                                    color: "white", 
+                                                                    border: "none", 
+                                                                    borderRadius: "4px", 
+                                                                    cursor: "pointer",
+                                                                    fontSize: "12px"
+                                                                }}
+                                                            >
+                                                                Delete
+                                                            
+                                                             setExpandedSiteId(expandedSiteId === site.docId ? null : site.docId)}
+                                                                style={{ 
+                                                                    padding: "5px 10px", 
+                                                                    backgroundColor: "#17a2b8", 
+                                                                    color: "white", 
+                                                                    border: "none", 
+                                                                    borderRadius: "4px",
+                                                                    cursor: "pointer",
+                                                                    fontSize: "12px"
+                                                                }}
+                                                            >
+                                                                {expandedSiteId === site.docId ? "Hide" : "Details"}
+                                                            
+                                                        
+
+
+                                                    
+                                                
+                                                        
+                                                            
+
+
+                                                                
+
+
+                                                                    Site Details: {site.name}
+                                                                
+
+
+                                                                
+
+
+                                                                    
+
+
+                                                                        
+
+
+                                                                            Site Information
+                                                                        
+
+
+                                                                        
+
+
+                                                                            
+
+ID: {site.siteId}
+
+
+                                                                            
+
+Name: {site.name}
+
+
+                                                                            
+
+Address: {site.address}
+
+
+                                                                            
+
+Coordinates: {site.lat}, {site.lng}
+
+
+                                                                        
+
+
+                                                                    
+
+
+                                                                    
+
+
+                                                                        
+
+
+                                                                            Assigned Employees ({site.employees.length})
+                                                                        
+
+
+                                                                        
+
+
+                                                                            {site.employees.length > 0 ? (
+                                                                                site.employees.map((emp, j) => (
+                                                                                    
+
+
+                                                                                        
+
+{emp.name} ({emp.empId})
+
+
+                                                                                        
+
+
+                                                                                            Last Check-in: {emp.lastCheckIn}
+                                                                                        
+
+
+                                                                                    
+
+
+                                                                                ))
+                                                                            ) : (
+                                                                                
+
+
+                                                                                    No employees assigned to this site yet
+                                                                                
+
+
+                                                                            )}
+                                                                        
+
+
+                                                                    
+
+
+                                                                
+
+
+                                                            
+
+
+                                                        
+                                                    
+                                
+
+
+                                {filteredSites.length === 0 && !isLoading && (
+                                    
+
+
+                                        {searchTerm ? (
+                                            
+
+
+                                                
+
+No sites found matching "{searchTerm}"
+
+
+                                                 setSearchTerm("")}
+                                                    style={{
+                                                        marginTop: "10px",
+                                                        padding: "8px 15px",
+                                                        backgroundColor: "#007bff",
+                                                        color: "white",
+                                                        border: "none",
+                                                        borderRadius: "4px",
+                                                        cursor: "pointer"
+                                                    }}
+                                                >
+                                                    Clear Search
+                                                
+                                            
+
+
+                                        ) : (
+                                            
+
+No sites found. Add your first site above.
+
+
+                                        )}
+                                    
+
+
+                                )}
+                            
+
+
+                        )}
+                    
+
+
+                
+
+
+            
+
+
+        
+
+
+    );
+};
+
+export default SiteControlPage;
+
+
+
+// src/pages/SupervisorDashboard.js
+import React, { useEffect, useState } from 'react';
+import { db } from '../firebaseConfig';
+import { collection, query, where, getDocs } from 'firebase/firestore';
+
+const SupervisorDashboard = ({ user, onLogout }) => {
+  const [supervisorData, setSupervisorData] = useState(null);
+  const [teamData, setTeamData] = useState(null);
+  const [teamMembers, setTeamMembers] = useState([]);
+  const [attendanceData, setAttendanceData] = useState([]);
+  const [sitesData, setSitesData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAllData = async () => {
+      try {
+        console.log('🔍 Fetching supervisor data for:', user.email);
+        
+        // 1. Get supervisor data
+        const supervisorQuery = query(
+          collection(db, 'supervisor'),
+          where('email', '==', user.email)
+        );
+        const supervisorSnap = await getDocs(supervisorQuery);
+        
+        if (supervisorSnap.empty) {
+          console.log('❌ No supervisor data found');
+          return;
+        }
+
+        const supData = supervisorSnap.docs[0].data();
+        console.log('✅ Supervisor data found:', supData);
+        setSupervisorData(supData);
+
+        // 2. Get team data
+        const teamQuery = query(
+          collection(db, 'teams'),
+          where('teamId', '==', supData.teamId)
+        );
+        const teamSnap = await getDocs(teamQuery);
+        
+        if (!teamSnap.empty) {
+          const teamInfo = teamSnap.docs[0].data();
+          console.log('✅ Team data found:', teamInfo);
+          setTeamData(teamInfo);
+        }
+
+        // 3. Get employees directly by teamId from employee collection
+        const employeeQuery = query(
+          collection(db, 'employee'),
+          where('teamId', '==', supData.teamId)
+        );
+        const employeeSnap = await getDocs(employeeQuery);
+        
+        // Also check for teamId with whitespace (like "team001 ")
+        const employeeQueryWithSpace = query(
+          collection(db, 'employee'),
+          where('teamId', '==', supData.teamId + ' ')
+        );
+        const employeeSnapWithSpace = await getDocs(employeeQueryWithSpace);
+        
+        // Combine both results
+        const filteredEmployees = [
+          ...employeeSnap.docs.map(doc => ({ id: doc.id, ...doc.data() })),
+          ...employeeSnapWithSpace.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+        ];
+        
+        console.log('👥 Team members found:', filteredEmployees);
+        setTeamMembers(filteredEmployees);
+
+        // 4. Get attendance data for team members
+        const employeeIds = filteredEmployees.map(emp => emp.empId);
+        if (employeeIds.length > 0) {
+          const attendanceSnap = await getDocs(collection(db, 'attendance'));
+          const attendanceRecords = attendanceSnap.docs
+            .map(doc => ({ id: doc.id, ...doc.data() }))
+            .filter(record => employeeIds.includes(record.empId))
+            .sort((a, b) => {
+              // Sort by timestamp (newest first)
+              if (a.timestamp && b.timestamp) {
+                return b.timestamp.toDate() - a.timestamp.toDate();
+              }
+              return 0;
+            });
+          
+          console.log('📋 Attendance records found:', attendanceRecords);
+          setAttendanceData(attendanceRecords);
+        }
+
+        // 5. Get all sites data
+        const sitesSnap = await getDocs(collection(db, 'Sites'));
+        const allSites = sitesSnap.docs.map(doc => ({ 
+          id: doc.id, 
+          ...doc.data() 
+        }));
+        
+        console.log('🏢 Sites data found:', allSites);
+        setSitesData(allSites);
+
+      } catch (error) {
+        console.error('❌ Error fetching data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (user?.email) {
+      fetchAllData();
+    }
+  }, [user.email]);
+
+  const formatDate = (timestamp) => {
+    if (!timestamp) return 'N/A';
+    try {
+      return timestamp.toDate().toLocaleString();
+    } catch (error) {
+      return 'Invalid date';
+    }
+  };
+
+  const getEmployeeAttendance = (empId) => {
+    return attendanceData.filter(record => record.empId === empId);
+  };
+
+  const getSiteInfo = (siteId) => {
+    return sitesData.find(site => site.siteId === siteId);
+  };
+
+  if (loading) {
+    return (
+      
+
+
+        
+
+
+          
+
+🔄 Loading Dashboard...
+
+
+          
+
+Please wait while we fetch your data.
+
+
+        
+
+
+      
+
+
+    );
+  }
+
+  if (!supervisorData) {
+    return (
+      
+
+
+        
+
+❌ Error
+
+
+        
+
+Could not load supervisor data. Please try logging in again.
+
+
+        🚪 Logout
+      
+
+
+    );
+  }
+
+  return (
+    
+
+
+      
+
+
+        
+
+👨💼 Supervisor Dashboard
+
+
+        🚪 Logout
+      
+
+
+      
+      
+
+
+        
+
+Welcome, {supervisorData.name}!
+
+
+        
+
+
+          
+
+
+            📧 Email: {supervisorData.email}
+          
+
+
+          
+
+
+            🆔 Supervisor ID: {supervisorData.supId}
+          
+
+
+          
+
+
+            👥 Team: {teamData ? teamData.name : supervisorData.teamId}
+          
+
+
+        
+
+
+      
+
+
+
+      {/* Team Members Section */}
+      
+
+
+        
+
+👥 Team Members ({teamMembers.length})
+
+
+        {teamMembers.length === 0 ? (
+          
+
+
+            
+
+🔍 No team members found for team {supervisorData.teamId}
+
+
+          
+
+
+        ) : (
+          
+
+
+            {teamMembers.map((emp, idx) => {
+              const empAttendance = getEmployeeAttendance(emp.empId);
+              const assignedSites = emp.assigned || [];
+              
+              return (
+                
+
+
+                  
+
+{emp.name}
+
+
+                  
+
+
+                    
+
+Employee ID: {emp.empId}
+
+
+                    
+
+Email: {emp.email}
+
+
+                    
+
+Status: {emp.active ? '✅ Active' : '❌ Inactive'}
+
+
+                    
+
+Team: {emp.teamId}
+
+
+                  
+
+
+                  
+                  {/* Assigned Sites */}
+                  
+
+
+                    
+
+🏢 Assigned Sites:
+
+
+                    {assignedSites.length === 0 ? (
+                      
+
+No sites assigned
+
+
+                    ) : (
+                      
+
+
+                        {assignedSites.map((siteId, siteIdx) => {
+                          const siteInfo = getSiteInfo(siteId);
+                          return (
+                            
+
+
+                              {siteInfo ? `${siteInfo.name} (${siteId})` : siteId}
+                            
+
+
+                          );
+                        })}
+                      
+
+
+                    )}
+                  
+
+
+
+                  {/* Recent Attendance */}
+                  
+
+
+                    
+
+📋 Recent Attendance:
+
+
+                    {empAttendance.length === 0 ? (
+                      
+
+No attendance records
+
+
+                    ) : (
+                      
+
+
+                        {empAttendance.slice(0, 5).map((record, recIdx) => (
+                          
+
+
+                            
+                              {record.type === 'check in' ? '🟢' : '🔴'} {record.type}
+                            
+                            
+                              {formatDate(record.timestamp)}
+                            
+                            {record.siteId && (
+                              
+                                @ {getSiteInfo(record.siteId)?.name || record.siteId}
+                              
+                            )}
+                          
+
+
+                        ))}
+                      
+
+
+                    )}
+                  
+
+
+                
+
+
+              );
+            })}
+          
+
+
+        )}
+      
+
+
+
+      {/* Team Summary */}
+      
+
+
+        
+
+📊 Team Summary
+
+
+        
+
+
+          
+
+
+            
+
+👥 Total Members
+
+
+            
+
+{teamMembers.length}
+
+
+          
+
+
+          
+
+
+            
+
+✅ Active Members
+
+
+            
+
+
+              {teamMembers.filter(emp => emp.active).length}
+            
+
+
+          
+
+
+          
+
+
+            
+
+📋 Total Attendance Records
+
+
+            
+
+{attendanceData.length}
+
+
+          
+
+
+          
+
+
+            
+
+🏢 Available Sites
+
+
+            
+
+{sitesData.length}
+
+
+          
+
+
+        
+
+
+      
+
+
+    
+
+
+  );
+};
+
+const styles = {
+  container: {
+    padding: '20px',
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: '#f8f9fa',
+    minHeight: '100vh',
+  },
+  loadingContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    backgroundColor: '#f8f9fa',
+  },
+  loading: {
+    textAlign: 'center',
+    padding: '40px',
+    backgroundColor: '#fff',
+    borderRadius: '12px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  },
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '30px',
+    padding: '20px',
+    backgroundColor: '#fff',
+    borderRadius: '12px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+  },
+  welcomeCard: {
+    backgroundColor: '#fff',
+    padding: '30px',
+    borderRadius: '12px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    marginBottom: '30px',
+  },
+  section: {
+    backgroundColor: '#fff',
+    padding: '30px',
+    borderRadius: '12px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    marginBottom: '30px',
+  },
+  infoGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+    gap: '15px',
+    marginTop: '20px',
+  },
+  infoItem: {
+    padding: '15px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '8px',
+    border: '1px solid #e9ecef',
+  },
+  noData: {
+    textAlign: 'center',
+    padding: '40px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '8px',
+    color: '#6c757d',
+  },
+  membersList: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+    gap: '20px',
+    marginTop: '20px',
+  },
+  memberCard: {
+    padding: '20px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '8px',
+    border: '1px solid #e9ecef',
+  },
+  empInfo: {
+    marginBottom: '15px',
+  },
+  sitesSection: {
+    marginBottom: '15px',
+  },
+  sitesList: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '5px',
+  },
+  siteTag: {
+    padding: '4px 8px',
+    backgroundColor: '#007bff',
+    color: 'white',
+    borderRadius: '4px',
+    fontSize: '12px',
+  },
+  noAssignment: {
+    color: '#6c757d',
+    fontStyle: 'italic',
+  },
+  attendanceSection: {
+    marginTop: '15px',
+  },
+  attendanceList: {
+    maxHeight: '200px',
+    overflowY: 'auto',
+  },
+  attendanceRecord: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '8px',
+    marginBottom: '5px',
+    backgroundColor: '#fff',
+    borderRadius: '4px',
+    fontSize: '14px',
+  },
+  attendanceType: {
+    fontWeight: 'bold',
+  },
+  attendanceTime: {
+    color: '#6c757d',
+  },
+  attendanceSite: {
+    color: '#007bff',
+    fontSize: '12px',
+  },
+  noAttendance: {
+    color: '#6c757d',
+    fontStyle: 'italic',
+  },
+  summaryGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+    gap: '20px',
+    marginTop: '20px',
+  },
+  summaryCard: {
+    padding: '20px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '8px',
+    textAlign: 'center',
+    border: '1px solid #e9ecef',
+  },
+  summaryNumber: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    color: '#007bff',
+    margin: '10px 0',
+  },
+  logout: {
+    padding: '10px 20px',
+    backgroundColor: '#dc3545',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '16px',
+  }
+};
+
+export default SupervisorDashboard;
+
+
+
+// src/App.js
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import AdminLogin from './pages/AdminLogin';
+import Dashboard from './pages/Dashboard';
+import EmployeeSection from './pages/EmployeeSection';
+import SiteSection from './pages/SiteSection';
+import AttendanceLogs from './pages/AttendanceLogs';
+import SupervisorDashboard from './pages/SupervisorDashboard';
+
+function App() {
+  const [user, setUser] = useState(null);
+  const [role, setRole] = useState(null);
+
+  const handleLogin = (loggedInUser, userRole) => {
+    setUser(loggedInUser);
+    setRole(userRole);
+  };
+
+  const handleLogout = () => {
+    setUser(null);
+    setRole(null);
+  };
+
+  return (
+    
+      
+        {/* Not logged in */}
+        {!user ? (
+          } />
+        ) : role === 'admin' ? (
+          <>
+            } />
+            } />
+            } />
+            } />
+            } />
+          
+        ) : role === 'supervisor' ? (
+          <>
+            } />
+            } />
+          
+        ) : (
+          🔒 Unauthorized Access} />
+        )}
+      
+    
+  );
+}
+
+export default App;
+
+
+
+i have only made these files
+what i want is all login to work from the same page leading to individual dashboards
+for the employee the location is fetched and of the employee is in the desired location onlyh then the attendance ios allowed
+
+
+the database for this is 
+
+sites
+
+
+Sites
+B8trXt9ogFYKEwTlpgE5
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+
+supervisor
+
+teams
+Sites
+
+B8trXt9ogFYKEwTlpgE5
+
+HLCyaJZWkI0J144N0R4b
+
+OJ78Obd6DFLBOGLJPtZY
+
+OUwWcPCHXH8k4QoXlKDz
+
+RTn2hbOiZbuMYBXFOF0M
+
+WFowS720NCKfhzj2ol90
+
+WKY7JXSvfosircrdREvr
+
+aPpDhq3qgSkiQvfhGIvK
+
+eVdSWUclCd2xIEhj00l2
+
+hr2shKFS8riRxz20uOgc
+
+i2IyIyjbDU2k1aSTeyQo
+
+xJYquX3abvcUPd2OjkGX
+B8trXt9ogFYKEwTlpgE5
+address
+"Kathmandu District"
+(string)
+
+
+lat
+27.7172
+(number)
+
+
+lng
+85.324
+(number)
+
+
+name
+"Kathmandu"
+(string)
+
+
+siteId
+"site003"
+(string)
+
+
+admin
+admin
+admin1@xyz.com
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+
+supervisor
+
+teams
+admin
+
+admin1@xyz.com
+
+admin2@xyz.com
+
+admin3@xyz.com
+
+admin4@xyz.com
+
+admin5@xyz.com
+admin1@xyz.com
+name
+"admin1"
+(string)
+
+attendance
+Zq7ulHMqnwYmVG7TlsBD
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+
+supervisor
+
+teams
+attendance
+
+Zq7ulHMqnwYmVG7TlsBD
+
+qL4Ze6uZiixKElx3qjoI
+Zq7ulHMqnwYmVG7TlsBD
+empId
+"emp004 "
+(string)
+
+
+siteId
+"site006"
+(string)
+
+
+timestamp
+June 17, 2025 at 6:03:06 PM UTC+5:45
+(timestamp)
+
+
+type
+"check in "
+(string)
+
+employee
+2oEzzcMaLKco2h5GkPnZ
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+
+supervisor
+
+teams
+employee
+
+2oEzzcMaLKco2h5GkPnZ
+
+90snkTCYfo27XPfpc8Pa
+
+HWJqvuh99OzhmkGXatvd
+
+UvdNNNO9AfttVPfSUUOV
+
+WNkwsDIabRJNJIPaWeBc
+
+eSbmB8T5zZLOILbSdFo4
+
+nbIusddespXw1DtqRUik
+
+vjTBB6Y3moTg4kwPgcgC
+
+wWobe61HX56IH3AdRfwb
+2oEzzcMaLKco2h5GkPnZ
+active
+true
+(boolean)
+
+
+
+assigned
+(array)
+
+
+0
+"Bharatpur"
+(string)
+
+
+email
+"jane.smith@example.com"
+(string)
+
+
+empId
+"emp004 "
+(string)
+
+
+name
+"Jane Smith"
+(string)
+
+
+supId
+"sup001"
+(string)
+
+
+teamId
+"team001 "
+(string)
+
+
+
+supervisor
+WfZazR1eK7r5h9Ce2Utd
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+
+supervisor
+
+teams
+supervisor
+
+WfZazR1eK7r5h9Ce2Utd
+
+zZPfvZMU8sEl6UMCWLQT
+WfZazR1eK7r5h9Ce2Utd
+email
+"ramu@gmail.com"
+(string)
+
+
+name
+"ramuu kaka"
+(string)
+
+
+supId
+"sup001"
+(string)
+
+
+teamId
+"team001"
+(string)
+
+
+teams
+Hd51O5Zkt4j0hRY3ezQP
+(default)
+
+Sites
+
+admin
+
+attendance
+
+employee
+
+supervisor
+
+teams
+teams
+
+Hd51O5Zkt4j0hRY3ezQP
+Hd51O5Zkt4j0hRY3ezQP
+name
+"kathmandu"
+(string)
+
+
+supId
+"sup005"
+(string)
+
+
+teamId
+"team001"
+(string)
+
+
+this are the collections of my firebase
+help me change what is wrong in this all files and design the other files
+
+the aim of my project was
+the employee will have employee id pass which will be required to log in into the site
+every emoloyee will be assigned their work location
+there are three things pls understand 
+team , supervisor and employee
+there are many teams maned team001,team002,team003 and there are certain employees assigned to each team 
+there is a supervisor to each team with sup001, sup002, sup003
+for  example in a complany there are 10 teams a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 , in each 
+and 4 sites W X Y Z 
+now for site W , a0 a4 a7 a9 are assigned
+for site X , a1 a5 a7 a9 are assigned
+for site Y , a1 a2 a3 a4 are assigned
+and in each team there is assigned a superviser 
+like for a0 is sup001 and etc
+the superviser will not have attendandce
+the employees can give attendance when they are in their assigned site other wise tthe he will get a error message
+i want the employee site with the employees with employees feature
+like give attendance
+view profile
+change pass
+view their attendance log and other features
+the supervisor will be able to log in to the website which is also created for admins and for him and there is a different dashboard where he can see details about his team
