@@ -1,0 +1,82 @@
+# Location-Based Attendance Management System
+
+A role-based web platform that automates and secures employee attendance tracking using geolocation validation, eliminating fraudulent check-ins from unauthorized locations.
+
+##  Features
+
+- **Role-Based Access Control** — Separate workflows and dashboards for Admin, Supervisor, and Employee roles
+- **Geolocation-Based Attendance Validation** — Restricts attendance marking to authorized coordinates, preventing proxy attendance and location spoofing
+- **Bulk Employee Onboarding** — Excel-based bulk upload system for fast, scalable employee registration
+- **Automated Credential Distribution** — Auto-generates and emails login credentials to onboarded employees
+- **Real-Time Data Sync** — Firestore-backed live updates across attendance records and user management
+
+##  System Roles
+
+| Role | Capabilities |
+|------|-------------|
+| **Admin** | Manage employees, configure authorized locations, view organization-wide attendance reports |
+| **Supervisor** | Monitor team attendance, approve/flag anomalies, manage employees under their unit |
+| **Employee** | Mark attendance (location-verified), view personal attendance history |
+
+##  Tech Stack
+
+- **Frontend:** React.js, JavaScript
+- **Authentication:** Firebase Authentication
+- **Database:** Firestore (Cloud Firestore, real-time NoSQL)
+- **Geolocation:** Browser Geolocation API for coordinate validation
+- **Bulk Operations:** Excel-based parsing for onboarding
+
+##  How It Works
+
+1. **Onboarding:** Admin uploads an Excel sheet with employee details → system bulk-creates accounts and emails credentials automatically.
+2. **Location Setup:** Admin configures authorized geo-coordinates (office/work location radius) for attendance validation.
+3. **Attendance Marking:** Employee attempts to mark attendance → system captures device geolocation → validates against authorized coordinates → accepts or rejects the request.
+4. **Monitoring:** Supervisors and Admins view real-time attendance logs and flag inconsistencies.
+
+##  Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/location-based-attendance-system.git
+
+# Navigate to project directory
+cd location-based-attendance-system
+
+# Install dependencies
+npm install
+
+# Set up Firebase config
+# Create a .env file with your Firebase project credentials:
+# REACT_APP_FIREBASE_API_KEY=your_api_key
+# REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+# REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+# ...
+
+# Run the app
+npm start
+```
+
+##  Environment Variables
+
+Create a `.env` file in the root directory with your Firebase configuration:
+## 📸 Screenshots
+
+*(Add screenshots of Admin dashboard, attendance marking screen, and onboarding flow here)*
+
+##  Future Enhancements
+
+- Mobile app version (React Native) for on-the-go attendance
+- Biometric/face-recognition-based attendance as an additional layer
+- Analytics dashboard for attendance trends and anomaly detection
+- Push notifications for attendance reminders and approvals
+
+##  License
+
+This project is licensed under the MIT License.
+
+##  Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/<your-username>/location-based-attendance-system/issues).
+
+---
+ If you found this project useful, consider giving it a star!
